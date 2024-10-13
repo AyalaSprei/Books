@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="header">
+      <button id="new" onclick="newBook()">New Book</button>
+      <select id="sortOptions" onchange="sortBooks()">
+          <option value="name">Sort by Name</option>
+          <option value="price">Sort by Price</option>
+      </select>
+      <button id="load" onclick="loadBooks()">Load Books</button> <!-- Load button -->
+  </div>
+  
+    <div class="main-container">
+      <div id="items"></div>
+  
+      <div id="side-bar">Choose a book</div>
+    </div>
+  
+    <div id="paginator"></div>
+  
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+  </body>
+</html>
